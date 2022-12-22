@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Saint Laurent</title>
+    <link rel="stylesheet" href="../font/font.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script>
+      $(function () {
+          var lastScrollTop = 0,
+              delta = 15;
+          $(window).scroll(function (event) {
+              var st = $(this).scrollTop();
+              if (Math.abs(lastScrollTop - st) <= delta) return;
+              if ((st > lastScrollTop) && (lastScrollTop > 0)) {
+                  $("#header").css("top", "-110px");
+              } else {
+                  $("#header").css("top", "0px");
+              }
+              lastScrollTop = st;
+          });
+      });
+      $(document).ready(function() {
+          $(window).scroll( function(){
+              $('.hideme').each( function(i){
+
+                  var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                  var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                  if( bottom_of_window > bottom_of_element ){
+                      $(this).animate({'opacity':'1','margin-top':'0px'},400);
+                  }
+              });
+          });
+      });
+</script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-content clearfix">
+        <h1 class="logo">
+          <a class="logo" href="../index.html"><img src="img/logo.png" alt=""></a>
+        </h1>
+          <nav class="navigation" role="navigation">
+              <ul class="primary-nav">
+                <li><a href="index.html">WOMEN</a></li>
+                <li><a href="../men/index.html">MEN</a></li>
+                <li><a href="../lookbook/index.html">LOOK BOOK</a></li>
+                <li><a href="../collection/index.html">COLLECTIONS</a></li>
+                <li><a href="../maison/index.html">LA MAISON</a></li>
+                <li><a href="../store/index.html">STORE LOACTOR</a></li>
+              </ul>
+          </nav>
+      </div><!-- header content -->
+    </header>
+      <div id="container">
+        <div class="gnb">
+          <ul>
+            <li>WOMEN</li>
+            <li><a href="#">new</a></li>
+            <li><a href="#">dress</a></li>
+            <li><a href="#">shirt</a></li>
+            <li><a href="#">leather</a></li>
+            <li><a href="#">pants</a></li>
+          </ul>
+        </div>
+        <div class="subcont">
+          <div class="hideme"><img src="img/1-1.jpg" class="img_on1"alt=""></div>
+          <div class="hideme"><img src="img/2-1.jpg" class="img_on2" alt=""></div>
+          <div class="hideme"><img src="img/3-1.jpg" class="img_on3" alt=""></div>
+          <div class="hideme"><img src="img/4-1.jpg" class="img_on4" alt=""></div>
+          <div class="hideme"><img src="img/5-1.jpg" class="img_on5" alt=""></div>
+          <div class="hideme"><img src="img/6-1.jpg" class="img_on6" alt=""></div>
+          <div class="hideme"><img src="img/7-1.jpg" class="img_on7" alt=""></div>
+          <div class="hideme"><img src="img/8-1.jpg" class="img_on8" alt=""></div>
+          <div class="hideme"><img src="img/9-1.jpg" class="img_on9" alt=""></div>
+          <div class="hideme"><img src="img/10-1.jpg" class="img_on10" alt=""></div>
+          <div class="hideme"><img src="img/11-1.jpg" class="img_on11" alt=""></div>
+          <div class="hideme"><img src="img/12-1.jpg" class="img_on12" alt=""></div>
+        </div>
+      </div>
+      <footer id="ft">
+        <div class="ft_wrap">
+          <p>
+            Saint Laurent Paris<br>
+  Representative: Karim Petus / 6600 TOPANGA CANYON BLVD, SUITE 1084C
+  CANOGA PARK TOPANGA US 91303<br>
+  Personal Information Protection Officer: Alice Lee / Hosting Service: Rackspace Hosting<br>
+  call +1 818 737 8558 E-mail clientservice.kr@ysl.com
+          </p>
+        </div>
+      </footer>
+  </body>
+</html>

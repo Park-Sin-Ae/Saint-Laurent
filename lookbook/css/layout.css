@@ -1,0 +1,114 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+#header {
+  position: fixed;
+  width: 100%;
+  height: 180px;
+  z-index: 999;
+  background-color: #000;
+  opacity: 0.9;
+  box-sizing:border-box;
+  transition: All 0.4s ease;
+  -webkit-transition: All 0.4s ease;
+  -moz-transition: All 0.4s ease;
+  -o-transition: All 0.4s ease;
+}
+#header .header-content {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 40px 0;
+  width: 80%;
+}
+#header h1 {
+  text-align: center;
+}
+.navigation{
+  width: 75%;
+  margin: 0 auto;
+}
+.navigation li {
+  display: inline-block;
+  margin-top: 50px;
+}
+.navigation a {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'regular';
+  font-size: 18px;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+.navigation a:hover, .navigation a.active {
+  color: #fff;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 320px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+#ft{
+  clear: both;
+  width: 100%;
+  padding-top: 200px;
+}
+.ft_wrap{
+  width: 100%;
+  height: 180px;
+  background-color: #000;
+  opacity: 0.7;
+  padding-top: 40px;
+  padding-left: 60px;
+}
+.ft_wrap p{
+  color: #fff;
+  opacity: none;
+  font-family: 'medium';
+  line-height: 25px;
+  font-size: 14px;
+}

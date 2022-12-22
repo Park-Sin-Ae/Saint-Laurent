@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Saint Laurent</title>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script>
+      $(function () {
+          var lastScrollTop = 0,
+              delta = 15;
+          $(window).scroll(function (event) {
+              var st = $(this).scrollTop();
+              if (Math.abs(lastScrollTop - st) <= delta) return;
+              if ((st > lastScrollTop) && (lastScrollTop > 0)) {
+                  $("#header").css("top", "-110px");
+              } else {
+                  $("#header").css("top", "0px");
+              }
+              lastScrollTop = st;
+          });
+      });
+</script>
+  </head>
+  <body>
+    <div class="banner">
+      <header id="header">
+        <div class="header-content clearfix">
+          <h1 class="logo">
+            <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+          </h1>
+            <nav class="navigation" role="navigation">
+                <ul class="primary-nav">
+                  <li><a href="women/index.html">WOMEN</a></li>
+                  <li><a href="men/index.html">MEN</a></li>
+                  <li><a href="lookbook/index.html">LOOK BOOK</a></li>
+                  <li><a href="collection/index.html">COLLECTIONS</a></li>
+                  <li><a href="maison/index.html">LA MAISON</a></li>
+                  <li><a href="store/index.html">STORE LOACTOR</a></li>
+                </ul>
+            </nav>
+        </div><!-- header content -->
+      </header>
+    </div>
+    <div class="cont_wrap">
+      <div class="cont1">
+        <div class="cont1_wrap">
+          <ul>
+            <li class="box1">
+              <a href="#">
+                <img src="img/banner1.png" alt="">
+              </a>
+              <div class="box_tx1">
+                <h2>S a n t a  E u l a i l a</h2>
+                <p>Saint Laurent for<br>Women Barcelona</p>
+                <a href="#">LEAN MORE</a>
+              </div>
+            </li>
+            <li class="box2">
+              <div class="box_tx2">
+                <h2>M I C A  B E H I N D<br>T H E  S C E N E S</h2>
+                <p>Saint Laurent Spring<br>2018 Campaign Backlash<br>Ontario Active Shcool Travel</p>
+                <a href="#">LEAN MORE</a>
+              </div>
+              <a href="#">
+                <img src="img/banner2.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cont2">
+        <div class="cont2_wrap">
+          <a href="wallet/index.html" class="img1">
+            <img src="img/img1.png" alt="">
+            <span>W A L L E T</span>
+          </a>
+          <a href="shoes/index.html" class="img2">
+            <img src="img/img2.png" alt="">
+            <span>S H O E S</span>
+          </a>
+          <a href="acc/index.html" class="img3">
+            <img src="img/img3.png" alt="">
+            <span>A C C E S S O R Y</span>
+          </a>
+          <a href="sun/index.html" class="img4">
+            <img src="img/img4.png" alt="">
+            <span>S U N G L A S S E S</span>
+          </a>
+        </div>
+      </div>
+      <div class="cont3">
+        <ul>
+          <li><a href="#"><img src="img/banner3.png" alt=""></a></li>
+          <li><a href="#"><img src="img/banner4.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <footer id="ft">
+      <div class="ft_wrap">
+        <p>
+          Saint Laurent Paris<br>
+Representative: Karim Petus / 6600 TOPANGA CANYON BLVD, SUITE 1084C
+CANOGA PARK TOPANGA US 91303<br>
+Personal Information Protection Officer: Alice Lee / Hosting Service: Rackspace Hosting<br>
+call +1 818 737 8558 E-mail clientservice.kr@ysl.com
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

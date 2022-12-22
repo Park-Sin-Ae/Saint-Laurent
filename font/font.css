@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'bold';
+    src: url('NotoSansCJKkr-Bold.eot');
+    src: local(※), url('NotoSansCJKkr-Bold.woff') format('woff')
+}
+@font-face {
+	font-family: 'medium';
+	src: url('NotoSansCJKkr-Medium.otf.eot');
+	src: local(※), url('NotoSansCJKkr-Medium.woff') format('eot')
+}
+@font-face {
+	font-family: 'regular';
+	src: url('NotoSansCJKkr-Regular.otf.eot');
+	src: local(※), url('NotoSansCJKkr-Regular.woff') format('woff')
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Saint Laurent</title>
+    <link rel="stylesheet" href="../font/font.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script>
+      $(function () {
+          var lastScrollTop = 0,
+              delta = 15;
+          $(window).scroll(function (event) {
+              var st = $(this).scrollTop();
+              if (Math.abs(lastScrollTop - st) <= delta) return;
+              if ((st > lastScrollTop) && (lastScrollTop > 0)) {
+                  $("#header").css("top", "-110px");
+              } else {
+                  $("#header").css("top", "0px");
+              }
+              lastScrollTop = st;
+          });
+      });
+    </script>
+    <body>
+      <header id="header">
+        <div class="header-content clearfix">
+          <h1 class="logo">
+            <a class="logo" href="../index.html"><img src="img/logo.png" alt=""></a>
+          </h1>
+            <nav class="navigation" role="navigation">
+                <ul class="primary-nav">
+                  <li><a href="../women/index.html">WOMEN</a></li>
+                  <li><a href="../men/index.html">MEN</a></li>
+                  <li><a href="index.html">LOOK BOOK</a></li>
+                  <li><a href="../collection/index.html">COLLECTIONS</a></li>
+                  <li><a href="../maison/index.html">LA MAISON</a></li>
+                  <li><a href="../store/index.html">STORE LOACTOR</a></li>
+                </ul>
+            </nav>
+        </div><!-- header content -->
+      </header>
+    <div class="container">
+      <div class="mySlides">
+        <img src="img/1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img/2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img/3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img/4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img/5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="img/6.jpg" style="width:100%">
+      </div>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="img/1t.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/2t.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/3t.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/4t.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/5t.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/6t.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+        </div>
+      </div>
+    </div>
+    <footer id="ft">
+      <div class="ft_wrap">
+        <p>
+          Saint Laurent Paris<br>
+Representative: Karim Petus / 6600 TOPANGA CANYON BLVD, SUITE 1084C
+CANOGA PARK TOPANGA US 91303<br>
+Personal Information Protection Officer: Alice Lee / Hosting Service: Rackspace Hosting<br>
+call +1 818 737 8558 E-mail clientservice.kr@ysl.com
+        </p>
+      </div>
+    </footer>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+    </body>
+    </html>
+      </body>
