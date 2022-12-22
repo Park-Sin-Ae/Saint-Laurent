@@ -33,7 +33,7 @@ body{
 }
 .navigation a {
   color: rgba(255, 255, 255, 0.75);
-  font-family: 'regular';
+  font-family: 'regular', sans-serif;
   font-size: 18px;
   margin-left: 40px;
   text-transform: uppercase;
@@ -54,11 +54,11 @@ body{
   padding-top: 50px;
 }
 .text h1{
-  font-family: 'bold';
+  font-family: 'bold', sans-serif;
   font-size: 45px;
 }
 .text p{
-  font-family: 'medium';
+  font-family: 'medium', sans-serif;
   font-size: 20px;
   padding-top: 20px;
 }
@@ -83,7 +83,7 @@ input[type=text], select {
   background-color: #ddd;
   padding: 15px 60px;
   text-align: center;
-  font-family: 'bold';
+  font-family: 'bold', sans-serif;
   font-size: 18px;
   color: #fff;
 }
@@ -105,8 +105,8 @@ input[type=text], select {
 }
 .ft_wrap p{
   color: #fff;
-  opacity: none;
-  font-family: 'medium';
+  opacity: 1;
+  font-family: 'medium', sans-serif;
   line-height: 25px;
   font-size: 14px;
 }

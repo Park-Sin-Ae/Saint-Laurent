@@ -33,7 +33,7 @@ body{
 }
 .navigation a {
   color: rgba(255, 255, 255, 0.75);
-  font-family: 'regular';
+  font-family: 'regular', sans-serif;
   font-size: 18px;
   margin-left: 40px;
   text-transform: uppercase;
@@ -87,7 +87,7 @@ body{
 }
 .box_tx1 h2,.box_tx2 h2{
   font-size: 35px;
-  font-family: 'bold';
+  font-family: 'bold', sans-serif;
 }
 .box2{
   padding-top: 50px;
@@ -98,7 +98,7 @@ body{
   line-height: 40px;
   margin-top: 30px;
   margin-bottom: 40px;
-  font-family: 'medium';
+  font-family: 'medium', sans-serif;
 }
 .box_tx1 a,.box_tx2 a{
   margin: 0 auto;
@@ -177,8 +177,8 @@ body{
 }
 .ft_wrap p{
   color: #fff;
-  opacity: none;
-  font-family: 'medium';
+  opacity: 1;
+  font-family: 'medium', sans-serif;
   line-height: 25px;
   font-size: 14px;
 }

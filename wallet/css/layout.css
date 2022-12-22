@@ -33,7 +33,7 @@ body{
 }
 .navigation a {
   color: rgba(255, 255, 255, 0.75);
-  font-family: 'regular';
+  font-family: 'regular', sans-serif;
   font-size: 18px;
   margin-left: 40px;
   text-transform: uppercase;
@@ -57,18 +57,18 @@ body{
 .gnb li{
   float: left;
   margin-right: 25px;
-  font-family: 'regular';
+  font-family: 'regular', sans-serif;
 }
 .gnb li:nth-child(1){
   margin-right: 40px;
-  font-family: 'bold';
+  font-family: 'bold', sans-serif;
   font-size: 20px;
 }
 .gnb li:nth-child(2){
-  font-family: 'bold';
+  font-family: 'bold', sans-serif;
 }
 .title{
-  font-family: 'bold';
+  font-family: 'bold', sans-serif;
   font-size: 20px;
 }
 .subcont{
@@ -120,8 +120,8 @@ body{
 }
 .ft_wrap p{
   color: #fff;
-  opacity: none;
-  font-family: 'medium';
+  opacity: 1;
+  font-family: 'medium', sans-serif;
   line-height: 25px;
   font-size: 14px;
 }

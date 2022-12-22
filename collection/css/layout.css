@@ -33,7 +33,7 @@ body{
 }
 .navigation a {
   color: rgba(255, 255, 255, 0.75);
-  font-family: 'regular';
+  font-family: 'regular', sans-serif;
   font-size: 18px;
   margin-left: 40px;
   text-transform: uppercase;
@@ -76,8 +76,8 @@ body{
 }
 .ft_wrap p{
   color: #fff;
-  opacity: none;
-  font-family: 'medium';
+  opacity: 1;
+  font-family: 'medium', sans-serif;
   line-height: 25px;
   font-size: 14px;
 }
